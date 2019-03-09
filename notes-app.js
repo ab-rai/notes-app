@@ -8,10 +8,6 @@ const notes=[{
     title:'Room modification',
     body:'Change to the 1st floor room'
 }]
-const ps=document.querySelectorAll('p')
-ps.forEach(function(p){
-    p.textContent='#$$$$$$$$$$$$$$#'
+document.querySelector('button').addEventListener('click',function(event){
+    event.target.textContent="The button was Clicked"
 })
-const newPara=document.createElement('p')
-newPara.textContent='123This is a new element from JavaScript'
-document.querySelector('body').appendChild(newPara)
